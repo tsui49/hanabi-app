@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;" charset="utf-8"/>
+    <title>Hanabi Map in Kanto</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/d3.v3.min.js"></script>
+    <script src="js/d3sparql.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css"/>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet-src.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="script/script.js"></script>
+  </head>
+  <body>
+    <header>
+    </header>
+    <main>
+      <div class="wrapper">
+        <h1>関東地方の花火マップ</h1>
+        <div id="when">
+            <h3>時期で絞る</h3>  
+            <div class="check">
+              <label><input type="checkbox" name="month" value="1月" checked>1月</label>
+              <label><input type="checkbox" name="month" value="2月" checked>2月</label>
+              <label><input type="checkbox" name="month" value="3月" checked>3月</label>
+              <label><input type="checkbox" name="month" value="4月" checked>4月</label>
+              <label><input type="checkbox" name="month" value="5月" checked>5月</label>
+              <label><input type="checkbox" name="month" value="6月" checked>6月</label>
+              <label><input type="checkbox" name="month" value="7月" checked>7月</label>
+              <label><input type="checkbox" name="month" value="8月" checked>8月</label>
+              <label><input type="checkbox" name="month" value="9月" checked>9月</label>
+              <label><input type="checkbox" name="month" value="10月" checked>10月</label>
+              <label><input type="checkbox" name="month" value="11月" checked>11月</label>
+              <label><input type="checkbox" name="month" value="12月" checked>12月</label>
+              <label><input type="checkbox" name="month" value="不定" checked>不定期</label>
+            </div>
+            <label><input type="checkbox" name="allcheck1" class="allcheck" checked>全選択・全解除</label>
+        </div>
+        <div id="where">
+            <h3>場所で絞る</h3>
+            <div class="check">
+              <label><input type="checkbox" name="place" value="茨城県" checked>茨城県</label>
+              <label><input type="checkbox" name="place" value="神奈川県" checked>神奈川県</label>
+              <label><input type="checkbox" name="place" value="群馬県" checked>群馬県</label>
+              <label><input type="checkbox" name="place" value="埼玉県" checked>埼玉県</label>
+              <label><input type="checkbox" name="place" value="千葉県" checked>千葉県</label>
+              <label><input type="checkbox" name="place" value="東京都" checked>東京都</label>
+              <label><input type="checkbox" name="place" value="栃木県" checked>栃木県</label>
+            </div>
+            <label><input type="checkbox" name="allcheck2" class="allcheck" checked>全選択・全解除</label>
+        </div>
+        <div id="scale">
+            <h3>規模で絞る</h3>
+            <div class="check">
+              <label><input type="checkbox" name="scale" value="0" checked>~5000発</label>
+              <label><input type="checkbox" name="scale" value="1" checked>5000発~10000発</label>
+              <label><input type="checkbox" name="scale" value="2" checked>10000発~20000発</label>
+              <label><input type="checkbox" name="scale" value="3" checked>20000発~</label>
+            </div>
+            <label><input type="checkbox" name="allcheck3" class="allcheck" checked>全選択・全解除</label>
+        </div>
+        <div id="hit"></div>
+        <div id="gmap"></div>
+      </div>
+    </main>
+  </body>
+</html>

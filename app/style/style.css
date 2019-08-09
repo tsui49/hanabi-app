@@ -1,0 +1,49 @@
+.wrapper {
+	width: 1080px;
+	margin: 0 auto;
+	padding-top: 3rem;
+}
+
+#gmap {
+	height: 500px;
+	width: 100%;
+	margin: 2rem auto;
+}
+
+#query {
+	width: 100%;
+	margin: 20px auto;
+}
+
+h1 {
+	margin: 3rem 0;
+}
+
+#when {
+	padding-top: 2rem;
+}
+
+#where>h3,
+#when>h3,
+#scale>h3 {
+	margin-top: 1rem;
+}
+
+.check {
+	width: 800px;
+	display: inline-flex;
+}
+
+label {
+	margin: auto 0.5rem;
+}
+
+.allcheck {
+	margin-left: 2rem;
+	display: inline-flex;
+}
+
+#hit {
+	padding-top: 3rem;
+	text-align: right;
+}
